@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Fun Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <section class="section">
+        <div class="backButton">
+            <i class="fas fa-arrow-left"></i><a href="index.html"> Back</a>
+        </div>
+
+        <h1>Calculate Area</h1>
+        <h3>Based on the data available with you for a triangle</h3>
+
+        <!-- Select options -->
+        <form class="criteria">
+            <select name="formula" id="formula">
+                <option id="opt1" value="baseHeight">By base and height length</option>
+                <option value="threeSides">By length of 3 sides</option>
+                <option value="twoSidesAngle">By length of 2 sides and included angle</option>
+              </select>
+        </form>
+
+        <!-- First formula calculation -->
+        <div style="margin-top: 1rem; margin-bottom: 1rem;" class="area" id="show1">
+            
+            <form class="form" class="areaCal">
+                <label class="label">base=
+                    <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required> 
+                </label>
+
+                <label class="label">height=
+                    <input class="inputBox inputSide inputInOption1" type="number" min="0.0001" step="0.00001" required>
+                </label>
+                
+                <button class="button" id="submitBtn">calculate</button>
+            </form>
+            <h2>Area will be calculated here-</h2>
+            <div class="output">
+                <label class="label">Area=</label>
+                <div style="display:inline;" class="areaShow">1/2 x base x height</div>
+            </div>
+        </div>
+
+        <!--  second formula calculation -->
+        <div style="margin-top: 1rem; margin-bottom: 1rem;" class="area" id="show2">
+            
+            <form class="form" class="areaCal">
+                
+                <label class="label">a=
+                    <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                </label>
+
+                <label class="label">b=
+                    <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                </label>
+
+                <label class="label">c=
+                    <input class="inputBox inputSide inputInOption2" type="number" min="0.0001" step="0.00001" required>
+                </label>
+                <p class="label error" style="color: brown;">Enter valid side lengths such that each side length should be less than sum of other two sides</p>
+                
+                <button class="button" id="submitBtn">calculate</button>
+            </form>
+            <h2>Area will be calculated here-</h2>
+            <div class="output">
+                <label class="label">Area=</label>
+                <div style="display:inline;" class="areaShow"><span style="font-size: 1.8rem;">√</span><span style="border-top:2px solid black; padding-top:0.1rem;">s(s-a)(s-b)(s-c)</span></div>
+            </div>
+        </div>
+        
+         <!-- area calculation 3rd formula -->
+        <div style="margin-top: 1rem; margin-bottom: 1rem;" class="area" id="show3">
+            
+            <form class="form" class="formForAreaCal">
+                
+                <label class="label">b=
+                    <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                </label>
+                
+                <label class="label">c=
+                    <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" required>
+                </label>
+
+                <label class="label">∠A(deg)=
+                    <input class="inputBox inputSide inputInOption3" type="number" min="0.0001" step="0.00001" max="360" required>
+                </label>
+
+                <button class="button" id="submitBtn">calculate</button>
+            </form>
+            <h2>Area will be calculated here-</h2>
+            <div class="output">
+                <label class="label">Area=</label>
+                <div style="display:inline;" class="areaShow">1/2 x b x c x sin(A)</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+    <ul class="social-icons">
+        <li class="list-item"> <a href=""><i class="fab fa-twitter icon"></i></a> </li>
+        <li class="list-item"> <a href=""><i class="fab fa-linkedin icon"></i></a> </li>
+        <li class="list-item"> <a href=""><i class="fab fa-github icon"></i></a> </li>
+        <li class="list-item"> <a href=""><i class="fab fa-instagram icon"></i></a> </li>
+        <li class="list-item"> <a href=""><i class="fab fa-discord icon"></i></a> </li>
+    </ul>
+</footer>
+<script src="calArea.js"></script>
+</body>
+</html>
