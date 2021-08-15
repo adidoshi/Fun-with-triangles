@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Triangle | Hypotenuse</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-</head>
-<body>
-<div class="container">
-    <section class="section">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="section">
         <div class="backButton">
-            <i class="fas fa-arrow-left"></i><a href="index.html"> Back</a>
+          <i class="fas fa-arrow-left"></i><a href="index.html"> Back</a>
         </div>
 
         <h1>Enter the lengths of sides of right angle triangle</h1>
 
         <form class="form" id="formHypo">
-            <label class="label">a=
-                <input class="inputBox inputSide" type="number" min="0.0001" step="0.00001" required> </label>
-                
-                <label class="label">b=
-                <input class="inputBox inputSide" type="number" min="0.0001" step="0.00001" required></label>
+          <label class="label"
+            >a=
+            <input
+              class="inputBox inputSide"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+            />
+          </label>
 
-                <button class="button" id="submitBtn">submit</button> 
+          <label class="label"
+            >b=
+            <input
+              class="inputBox inputSide"
+              type="number"
+              min="0.0001"
+              step="0.00001"
+              required
+          /></label>
 
-                <h2>Hypotenuse will be calculated here-</h2>
-            <div class="output">
-                <label class="label">C=</label>
-                <div style="display:inline;" class="hypoShow"><span style="font-size: 1.8rem;">√</span><span style="border-top:2px solid black; padding-top:0.1rem;">a<sup>2</sup>+b<sup>2</sup></span></div>
-            </div>               
+          <button class="button" id="submitBtn">submit</button>
+
+          <h2>Hypotenuse will be calculated here-</h2>
+          <div class="output">
+            <label class="label">C=</label>
+            <div style="display: inline" class="hypoShow">
+              <span style="font-size: 1.8rem">√</span
+              ><span style="border-top: 2px solid black; padding-top: 0.1rem"
+                >a<sup>2</sup>+b<sup>2</sup></span
+              >
+            </div>
+          </div>
         </form>
-    </section>
-</div>
+      </section>
+    </div>
 
-<footer class="footer">
-    <ul class="social-icons">
-        <li class="list-item"> <a href=""><i class="fab fa-twitter icon"></i></a> </li>
-        <li class="list-item"> <a href=""><i class="fab fa-linkedin icon"></i></a> </li>
-        <li class="list-item"> <a href=""><i class="fab fa-github icon"></i></a> </li>
-        <li class="list-item"> <a href=""><i class="fab fa-instagram icon"></i></a> </li>
-        <li class="list-item"> <a href=""><i class="fab fa-discord icon"></i></a> </li>
-    </ul>
-</footer>
-<script src="checkHypo.js"></script>
-</body>
+    <footer class="footer">
+      <ul class="social-icons">
+        <li class="list-item">
+          <a href="https://twitter.com/adidoshi08"
+            ><i class="fab fa-twitter icon"></i
+          ></a>
+        </li>
+        <li class="list-item">
+          <a href="https://www.linkedin.com/in/aditya-doshi08/"
+            ><i class="fab fa-linkedin icon"></i
+          ></a>
+        </li>
+        <li class="list-item">
+          <a href="https://github.com/adidoshi"
+            ><i class="fab fa-github icon"></i
+          ></a>
+        </li>
+        <li class="list-item">
+          <a href="https://www.instagram.com/coder_adii/"
+            ><i class="fab fa-instagram icon"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="checkHypo.js"></script>
+  </body>
 </html>

@@ -46,7 +46,7 @@ formula.addEventListener("change", function() {
     const a = inputOptionTwo[0].value;
     const b = inputOptionTwo[1].value;
     const c = inputOptionTwo[2].value;
-    console.log(a,b,c);
+    // console.log(a,b,c);
 
     if((a+b)>c, (b+c)>a, (c+a)>b){
       outputDiv[1].style.display = "block";
