@@ -52,6 +52,7 @@ formula.addEventListener("change", function() {
       outputDiv[1].style.display = "block";
       let s = (Number(a) + Number(b) + Number(c))/2;
     areaShow[1].innerHTML = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+
     }
     else {
       error.style.display = "block";
